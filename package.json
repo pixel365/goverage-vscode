@@ -1,6 +1,7 @@
 {
   "name": "goverage-vscode",
   "version": "0.1.0",
+  "publisher": "pixel365",
   "license": "MIT",
   "engines": {
     "vscode": "^1.101.0"
