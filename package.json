@@ -1,0 +1,72 @@
+{
+  "name": "goverage-vscode",
+  "version": "0.1.0",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.101.0"
+  },
+  "displayName": "Goverage",
+  "description": "Goverage is a plugin for VS Code that shows inline test coverage percentages for each function, powered by go tool cover.",
+  "author": {
+    "name": "Ruslan Semagin",
+    "email": "pixel.365.24@gmail.com",
+    "url": "https://github.com/pixel365"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pixel365/goverage-vscode"
+  },
+  "bugs": {
+    "url": "https://github.com/pixel365/goverage-vscode/issues",
+    "email": "pixel.365.24@gmail.com"
+  },
+  "homepage": "https://github.com/pixel365/goverage-vscode/blob/main/README.md",
+  "categories": [
+    "Other",
+    "Testing",
+    "Debuggers"
+  ],
+  "keywords": [
+    "go",
+    "coverage",
+    "testing"
+  ],
+  "icon": "images/icon.png",
+  "galleryBanner": {
+    "color": "#7fa7ba",
+    "theme": "light"
+  },
+  "pricing": "Free",
+  "activationEvents": [
+    "onStartupFinished",
+    "onLanguage:go"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "goverage.refreshHints",
+        "title": "Refresh Goverage Hints"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.101.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@typescript-eslint/eslint-plugin": "^8.31.1",
+    "@typescript-eslint/parser": "^8.31.1",
+    "eslint": "^9.25.1",
+    "typescript": "^5.8.3",
+    "@vscode/test-cli": "^0.0.11",
+    "@vscode/test-electron": "^2.5.2"
+  }
+}
