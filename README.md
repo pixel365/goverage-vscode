@@ -19,7 +19,7 @@ It helps visualize how well your Go functions and files are covered by tests.
 
 ### ✅ From VS Code Marketplace
 
-👉 [Install via Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=pixel365.goverage)
+👉 [Install from Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=pixel365.goverage-vscode)
 
 1. Open **VS Code**.
 2. Go to **Extensions (Ctrl+Shift+X)** and search for **Goverage**.
